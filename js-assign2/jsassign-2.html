@@ -1,0 +1,48 @@
+<html>
+<body>
+<h1>There are two type of scopes <h1>
+<h2 style="color:red">Block-scope<h2>
+<h2>Redeclaring a <span style="color:blue">var</span> variable inside a block will also redeclare the variable outside the block:</h2>
+
+<p id="demo"></p>
+<h2>
+Redeclaring a <span style="color:blue">let & const </span>  variable inside a block will not redeclare the variable outside the block:</h2>
+
+<p id="demo1"></p>
+
+<h2 style="color:red">functional-scope<h2>
+
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+
+
+<script>
+  var x = "good";
+    
+   if(true) {
+        var x = "bad";
+    }
+document.getElementById("demo").innerHTML = x;
+
+var y = "good";
+    
+   if(true) {
+        let y = "bad";
+    }
+document.getElementById("demo1").innerHTML = y;
+
+function myFn() {
+ var z = "peak";
+ document.getElementById("demo2").innerHTML = "inside the block : " + z; 
+}
+myFn();
+
+document.getElementById("demo3").innerHTML ="outside the block : " + typeof z;
+
+
+
+</script>
+
+</body>
+</html>

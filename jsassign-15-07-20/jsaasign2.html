@@ -1,0 +1,38 @@
+
+<html>
+<body><h2>String methods</h2>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<h2>Array methods</h2>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p> 
+<script>
+var t = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo").innerHTML = t.length;
+var str = "Please help to get help!";
+document.getElementById("demo1").innerHTML = str.indexOf("help");;
+document.getElementById("demo2").innerHTML = str.lastIndexOf("help");
+document.getElementById("demo3").innerHTML = str.indexOf("help", 12);
+document.getElementById("demo4").innerHTML = str.lastIndexOf("help", 14);
+var s = "like, dislike, hate";
+document.getElementById("demo4").innerHTML = s.slice(7, 13);
+document.getElementById("demo5").innerHTML = "Similar to slice cannot accept negative values : " + " " + s.substring(7, 13);
+document.getElementById("demo6").innerHTML = "Similar to slice second parameter specifies length : " + " " + s.substr(-4);
+var car = ["Engine", "Color", "Model", "Tyre"];
+document.getElementById("demo7").innerHTML = car.toString();
+document.getElementById("demo8").innerHTML = car.join(" * ");
+document.getElementById("demo9").innerHTML = car.shift("Type");
+document.getElementById("demo10").innerHTML = car.unshift("Type");
+document.getElementById("demo11").innerHTML = car.splice(2, 2, "Type", "Fuel");
+</script>
+</body>
+</html>
+ 

@@ -1,0 +1,26 @@
+
+<html>
+<body>
+<form method="get">
+          input from user : <input type="number"  id="fname">
+          <input type="button" value="Submit" onClick="usrip()"></br>
+          <span id="result"></span>
+</form>
+<script>
+function usrip() {
+    var num =   document.getElementById('fname').value;
+
+            if ( num % 2){
+                document.getElementById('result').innerHTML = "The number entered is : " + num + "  and the number is odd ";
+                console.log("The number entered is : " + num + "  and the number is odd ");
+            }
+            else{
+                document.getElementById('result').innerHTML = "The number entered is : " + num + " and the number is even ";
+                console.log("The number entered is : " + num + "  and the number is even");
+}
+}  
+ 
+</script>
+</body>
+</html>
+ 

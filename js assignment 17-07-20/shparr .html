@@ -1,0 +1,19 @@
+
+<html>
+<body>
+<p id="demo"></p>
+<script>
+var shoppingList = ["DriedFruits", "Cerals", "pasta", "Meat", "Chees", "Egg"];
+var shoppingBasket = ["DriedFruits", "Cerals", "pasta", "Meat", "Chees", "Egg"];
+shoppingBasket[7] = "Herbs";
+shoppingBasket[6] = "Butter";
+shoppingBasket.push("Pepper");
+shoppingBasket.push("Vegetables");
+shoppingBasket.unshift("Milk");
+shoppingBasket.unshift("Fruits");
+document.getElementById("demo").innerHTML = shoppingBasket;
+console.log(shoppingBasket);
+</script>
+</body>
+</html>
+ 

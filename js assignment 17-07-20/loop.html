@@ -1,0 +1,34 @@
+<html>
+<body>
+<form method="get">
+          input from user : <input type="text"  id="fname">
+          <input type="button" value="Submit" onclick="loop()"></br>
+          <span id="result"></span>
+</form>
+<script>
+function loop() {
+var num = document.getElementById('fname').value;
+  for (var i=1 ; i<=100; i++) {
+   if((num%3===0) && (num%5===0)){
+      document.getElementById('result').innerHTML = "fizzbuzz";
+      console.log("fizzbuzz");
+     }
+    else if(num%3===0){
+    document.getElementById('result').innerHTML = "fizz";
+    console.log("fizz");
+     }
+    else if(num%5===0){
+    document.getElementById('result').innerHTML = "buzz";
+    console.log("buzz");
+     }
+    else{
+    document.getElementById('result').innerHTML = "Nothing";
+    console.log("Nothing");  
+    }
+}
+}
+</script>
+</body>
+</html>
+ 
+ 

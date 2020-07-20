@@ -1,0 +1,23 @@
+
+<html>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+const student ={
+     name:"Helsinki",
+     age:24,
+     project:{
+       dicegame:"Two payer dice game using javascript"
+      }
+}
+const{name, age, project: {dicegame}}=student;
+
+document.getElementById("demo").innerHTML = name;
+document.getElementById("demo1").innerHTML = age;
+document.getElementById("demo2").innerHTML = dicegame;
+</script>
+</body>
+</html>
+

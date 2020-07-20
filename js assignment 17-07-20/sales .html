@@ -1,0 +1,39 @@
+<html>
+<body>
+<form method="get">
+          input from user : <input type="number"  id="fname">
+          <input type="button" value="Submit" onclick="sales()"></br>
+          <span id="result"></span>
+</form>
+<script>
+function sales() {
+    var num =   document.getElementById('fname').value;
+ 
+         if (num <= 5000){
+              var x = (2/100)*num;
+                document.getElementById('result').innerHTML = "The sales is : " + num + "  and the reward is " + x;
+                console.log("The sales is : " + num + "  and the reward is " + x);
+               }
+          else if (num >= 5001 && num <= 10000){
+                var y = (5/100)*num;
+                document.getElementById('result').innerHTML = "The sales is : " + num + "  and the reward is " + y;
+                console.log("The sales is : " + num + "  and the reward is " + y);
+               }
+            else if (num >= 10001 && num <= 20000){
+                  var z = (7/100)*num;
+                 document.getElementById('result').innerHTML = "The sales is : " + num + "  and the reward is " + z;
+                console.log("The sales is : " + num + "  and the reward is " + z);
+               }
+            else {
+               var a = (10/100)*num;
+                 document.getElementById('result').innerHTML = "The sales is : " + num + "  and the reward is " + a;
+                console.log("The sales is : " + num + "  and the reward is " + a);
+              }
+           
+}  
+ 
+</script>
+</body>
+</html>
+ 
+

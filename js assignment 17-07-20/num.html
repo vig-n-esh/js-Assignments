@@ -1,0 +1,19 @@
+<html>
+<body>
+<form method="get">
+          input from user : <input type="text"  id="fname">
+          <input type="button" value="Submit" onClick="usrip()"></br>
+          <span id="result"></span>
+</form>
+<script>
+function usrip(){
+var x = document.getElementById('fname').value;
+var text = (isNaN(x) || x < 100 || x === null) ? "Input not valid" : "Input OK";
+document.getElementById('result').innerHTML = text;
+console.log(text);
+}
+ 
+</script>
+</body>
+</html>
+ 

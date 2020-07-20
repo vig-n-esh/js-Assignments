@@ -1,0 +1,23 @@
+<html>
+<body>
+<form method="get">
+          input from user : <input type="text"  id="fname">
+          <input type="button" value="Submit" onClick="usrip()"></br>
+          <span id="result"></span>
+</form>
+<script>
+function usrip() {
+var str = document.getElementById('fname').value;
+for (var i=2 ; i<=str; i++) {
+    if((i%2===0) || (i%3===0))
+        continue;
+    document.writeln(i+" ");
+    console.log(i+" ");
+}
+}
+ 
+</script>
+</body>
+</html>
+ 
+

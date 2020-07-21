@@ -1,0 +1,60 @@
+
+<html>
+<body>
+<script>
+class User {
+    constructor(name, age,email) {
+      this.name = name;
+      this.age = age;
+      this.email = email;
+    }
+    login(){
+        console.log(this.name + " has logged in ");
+        return this;
+    }
+    logout(){
+        console.log(`${this.name} has logged out`);
+        return this;
+    }
+}
+class Moderator extends User {
+    constructor(name,age,email,Coins){
+        super(name,age,email);
+        this.Coins = Coins;
+    }
+     addCoins(){
+        this.Coins++;
+        console.log(this.name + " has " + this.Coins + " coins ");
+        return this;
+    }
+     removeCoins(){
+        this.Coins--;
+        console.log(`${this.name} has ${this.Coins} coins`);
+        return this;
+    }
+}
+class Admin extends Moderator {
+   constructor(name,age,email,Coins,Course){
+        super(name,age,email,Coins);
+       this.Course = Course;
+   }
+   addcourse(){
+         console.log(this.Course + " has selected in ");
+         return this;
+   }
+   removecourse(){
+       console.log(" the course is not selected");
+       return this;
+  }
+}
+prsn = new Admin("Shelby", 20, "shel@gmail.com",2,"js");
+console.log(prsn.login());
+console.log(prsn.logout());
+console.log(prsn.addCoins());
+console.log(prsn.removeCoins());
+console.log(prsn.addcourse());
+console.log(prsn.removecourse());
+</script>
+</body>
+</html>
+

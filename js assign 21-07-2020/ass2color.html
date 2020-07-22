@@ -1,0 +1,19 @@
+
+<html>
+<head>
+<script>
+  var c = ["THISTLE", "INDIANRED", "LIGHTCORAL", "LIGHTSALMON", "TOMATO"];
+  var currentColor = 0;
+
+  function changeColor() {
+    document.bgColor = c[currentColor];
+    currentColor = (currentColor + 1) % c.length ;
+    setTimeout(changeColor, 5000);
+  }
+
+</script>
+</head>
+<body onload="changeColor()">
+</body>
+</body>
+</html>

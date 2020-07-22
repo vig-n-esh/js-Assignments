@@ -1,0 +1,32 @@
+<html>
+<head>style="color:white"
+<script>
+function usrip() {
+    var val =   document.getElementById('fname').value;
+    document.getElementById("result").innerHTML = "Welcome to the js course :" + " " + val;
+}
+function clock(){
+    var date = new Date();
+    var time = date.toLocaleTimeString();
+    document.getElementById("demo").value = time;
+}
+setInterval(clock,1000);
+</script>
+<style>
+body {
+background-color: black;
+}
+</style>
+</head>
+<body>
+<div style="color:white">
+<form method="get">
+          input from user : <input type="text"  id="fname">
+          <input type="button" value="Submit" onClick="usrip()"></br>
+          <span id="result"></span>
+</form>
+</div>
+<input type="text" id="demo">
+</body>
+</html>
+
